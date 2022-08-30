@@ -7,20 +7,28 @@
     <title>
         MusicDot | Página Principal
     </title>
-    <link rel="stylesheet" hrel="sobre.css">
-    <link href="img/favicon.ico" rel="icon">
+    <link  rel="icon" href="img/favicon.ico">
+    <!-- Referencia as fontes do CSS Reset-->
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Montserrat:300,400,500,600,700,&display=block">
+    <!-- Referencia as arquivo do CSS Reset-->
+    <link rel="stylesheet" href="css/reset.css">
+    <!--Referencia arquivo do CSS Reset do Cabeçalho-->
+    <link rel="stylesheet" href="css/cabecalho.css">
 </head>
 
 <body>
-    <header>
+        <!--Inicio do Layout de flexbox (Cabeçalho)-->
+    <header class="cabecalho">
         <a href="index.html">
-            <img src="img/musicdot-logo-light.svg" title="Ir para a página	inicial	da	Musicdot" alt="Musicdot">
+            <!--Logo do Layout de flexbox (Cabeçalho)-->
+            <img class="cabecalho__logo" src="img/musicdot-logo-light.svg" title="Ir para a página	inicial	da	Musicdot" alt="Musicdot">
         </a>
+        <!--Itens do Layout de flexbox (Cabeçalho)-->
         <nav>
-            <ul>
-                <li> <a href="sobre.html#contato">Contato</a></li>
-                <li><a href="#">Entrar</a></li>
-                <li><a href="#">Matricule-se</a></li>
+            <ul class="cabecalho__menu">
+                <li class="cabecalho__menu-item"> <a href="sobre.html#contato">Contato</a></li>
+                <li class="cabecalho__menu-item"><a href="#">Entrar</a></li>
+                <li class="cabecalho__menu-item"><a href="#">Matricule-se</a></li>
             </ul>
         </nav>
     </header>
