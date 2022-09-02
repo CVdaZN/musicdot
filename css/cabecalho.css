@@ -1,6 +1,5 @@
 /* 
-            FLEXBOX No Layout 
-            FLEXBOX No Layout 2 abaixo 640px
+            FLEXBOX No Layout do abaixo 640px
             os botoes ficaram alinhado embaxo do logo 
 
 */
@@ -43,7 +42,7 @@
 
 */
 @media(min-width:640px) {
-    .cabecalho__menu {
+    .cabecalho {
         padding: 0 5%;
         align-items: center;
         flex-wrap: wrap;
