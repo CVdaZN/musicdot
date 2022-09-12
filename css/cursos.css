@@ -240,11 +240,13 @@
     }
 
 
-    @media(min-width:1440px) {}
-
-    .cursos__lista {
-        grid-template-columns: repeat(6, 11rem);
+    @media(min-width:1440px) {
+        .cursos__lista {
+            grid-template-columns: repeat(6, 11rem);
+        }
     }
+
+   
 }
 
 @media(min-width:1600px) {
