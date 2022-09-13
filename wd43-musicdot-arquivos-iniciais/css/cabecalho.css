@@ -1,0 +1,85 @@
+/* 
+            FLEXBOX No Layout do abaixo 640px
+            os botoes ficaram alinhado embaxo do logo 
+
+*/
+.cabecalho {
+    position: absolute;
+    top: 0;
+    width: 100%;
+    box-sizing: border-box;
+    text-align: center;
+    font-size: 0.6rem;
+    font-weight: bold;
+    text-transform: uppercase;
+    letter-spacing: 0.23em;
+    color: #fff;
+    background-color: #2d5377;
+}
+
+.cabecalho__logo {
+    padding: 1.5em 0;
+    width: 14.5em;
+}
+
+.cabecalho__menu {
+
+    display: flex;
+
+    justify-content: space-evenly;
+    flex-wrap: nowrap;
+    background-color: #02010187;
+
+}
+
+.cabecalho_item-menu {
+    display: inline-block;
+    margin-left: 1.42em;
+}
+
+.cabecalho__item-menu a {
+    display: inline-block;
+    margin-left: 1.42em;
+}
+
+/* 
+            FLEXBOX No Layout 2 A partir de 640px
+            os botoes ficaram na mesma atura do logo 
+
+*/
+@media(min-width:640px) {
+    .cabecalho {
+
+        padding-top: 0;
+        padding-bottom: 0;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+
+    .cabecalho__logo {
+        padding: 2.5em 0;
+    }
+
+    .cabecalho__menu {
+        background-color: transparent;
+    }
+}
+
+/*	 o	 item	 "Matricule-se"	 do	 menu ficara Destacado	ele	com	o fundo	vermelho #e93d50, com um espaçamento à esquerda	de 1.42em e	uma borda redonda	com	raio de 6px */
+
+@media(min-width:770px) {
+    .cabecalho__item-menu--matricula {
+        margin-left: 1.42em;
+
+        
+        border-radius: 6px;
+        background-color: #e93d50;
+    }
+
+
+    .cabecalho__item-menu--matricula a {
+        padding: 1.8em 3.5em;
+    }
+
+}
